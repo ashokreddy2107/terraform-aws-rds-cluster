@@ -307,7 +307,7 @@ Review the [complete example](examples/complete) to see how to use this module.
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.81.0 |
 | <a name="requirement_null"></a> [null](#requirement\_null) | >= 2.0 |
@@ -316,14 +316,14 @@ Review the [complete example](examples/complete) to see how to use this module.
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.81.0 |
 | <a name="provider_random"></a> [random](#provider\_random) | >= 2.0 |
 
 ## Modules
 
 | Name | Source | Version |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | <a name="module_dns_master"></a> [dns\_master](#module\_dns\_master) | cloudposse/route53-cluster-hostname/aws | 0.13.0 |
 | <a name="module_dns_replicas"></a> [dns\_replicas](#module\_dns\_replicas) | cloudposse/route53-cluster-hostname/aws | 0.13.0 |
 | <a name="module_enhanced_monitoring_label"></a> [enhanced\_monitoring\_label](#module\_enhanced\_monitoring\_label) | cloudposse/label/null | 0.25.0 |
@@ -333,7 +333,7 @@ Review the [complete example](examples/complete) to see how to use this module.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_appautoscaling_policy.replicas](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appautoscaling_policy) | resource |
 | [aws_appautoscaling_target.replicas](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appautoscaling_target) | resource |
 | [aws_db_parameter_group.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_parameter_group) | resource |
@@ -361,7 +361,7 @@ Review the [complete example](examples/complete) to see how to use this module.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_activity_stream_enabled"></a> [activity\_stream\_enabled](#input\_activity\_stream\_enabled) | Whether to enable Activity Streams | `bool` | `false` | no |
 | <a name="input_activity_stream_kms_key_id"></a> [activity\_stream\_kms\_key\_id](#input\_activity\_stream\_kms\_key\_id) | The ARN for the KMS key to encrypt Activity Stream Data data. When specifying `activity_stream_kms_key_id`, `activity_stream_enabled` needs to be set to true | `string` | `""` | no |
 | <a name="input_activity_stream_mode"></a> [activity\_stream\_mode](#input\_activity\_stream\_mode) | The mode for the Activity Streams. `async` and `sync` are supported. Defaults to `async` | `string` | `"async"` | no |
@@ -475,7 +475,7 @@ Review the [complete example](examples/complete) to see how to use this module.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_activity_stream_arn"></a> [activity\_stream\_arn](#output\_activity\_stream\_arn) | Activity Stream ARN |
 | <a name="output_activity_stream_name"></a> [activity\_stream\_name](#output\_activity\_stream\_name) | Activity Stream Name |
 | <a name="output_admin_user_secret"></a> [admin\_user\_secret](#output\_admin\_user\_secret) | The secret manager attributes for the managed admin user password (`master_user_secret`). |
@@ -486,6 +486,7 @@ Review the [complete example](examples/complete) to see how to use this module.
 | <a name="output_database_name"></a> [database\_name](#output\_database\_name) | Database name |
 | <a name="output_dbi_resource_ids"></a> [dbi\_resource\_ids](#output\_dbi\_resource\_ids) | List of the region-unique, immutable identifiers for the DB instances in the cluster |
 | <a name="output_endpoint"></a> [endpoint](#output\_endpoint) | The DNS address of the RDS instance |
+| <a name="output_instance_arns"></a> [instance\_arns](#output\_instance\_arns) | List of ARNs of the DB instances in the cluster |
 | <a name="output_instance_endpoints"></a> [instance\_endpoints](#output\_instance\_endpoints) | List of DNS addresses for the DB instances in the cluster |
 | <a name="output_master_host"></a> [master\_host](#output\_master\_host) | DB Master hostname |
 | <a name="output_master_username"></a> [master\_username](#output\_master\_username) | Username for the master DB user |
